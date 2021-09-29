@@ -38,12 +38,12 @@ namespace TelCo.ColorCoder
             Debug.Assert(colorPair._minorColor == Color.Green);
 
             ColorPair testPair2 = new ColorPair() { _majorColor = Color.Yellow, _minorColor = Color.Green };
-            pairNumber = Utility.GetPairNumberFromColor(testPair2);
+            pairNumber = ColorPair.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}\n", testPair2, pairNumber);
             Debug.Assert(pairNumber == 18);
 
             testPair2 = new ColorPair() { _majorColor = Color.Red, _minorColor = Color.Blue };
-            pairNumber = Utility.GetPairNumberFromColor(testPair2);
+            pairNumber = ColorPair.GetPairNumberFromColor(testPair2);
             Console.WriteLine("[In]Colors: {0}, [Out] PairNumber: {1}", testPair2, pairNumber);
             Debug.Assert(pairNumber == 6);
 
