@@ -37,22 +37,6 @@ namespace TelCo.ColorCoder
             return pair;
         }
 
-        /// <summary>
-        /// For providing Color Coding Reference Manual
-        /// </summary>
-        public static void PrintReferenceManual()
-        {
-            int count = 1;
-            foreach(var itemMajor in ColorMap._colorMapMajor)
-            {
-                foreach (var itemMinor in ColorMap._colorMapMinor)
-                {
-                    Console.WriteLine("Pair no. " + count + "\n" + "Major color " + itemMajor.Name + "\n" + "Minor color " + itemMinor.Name);
-                    Console.WriteLine("\n");
-                    count++;
-                }
-                
-            }
-        }
+        
     }
 }
